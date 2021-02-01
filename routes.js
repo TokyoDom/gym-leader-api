@@ -5,7 +5,17 @@ const knexConfig = require("./knexfile");
 const knex = require('knex')(knexConfig);
 
 router.get("/leaders", async (req, res) => {
-  const data = await knex.select().from("gym_leaders");
+  let data = await knex.select().from("gym_leaders");
+
+  try {
+    const limit = parseInt(req.query.limit);
+    data = data.slice(0, limit);
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(400);
+    return;
+  }
+   
   res.json(data);
 });
 
