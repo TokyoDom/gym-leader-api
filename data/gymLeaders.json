@@ -1,0 +1,512 @@
+[
+  {
+    "name": "Brock",
+    "gen": 1,
+    "gym": 1,
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brock.png",
+    "pokemon": ["Geodude", "Onix"]
+  },
+  {
+    "name": "Misty",
+    "gen": 1,
+    "gym": 2,
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/misty.png",
+    "pokemon": ["Staryu", "Starmie"]
+  },
+  {
+    "name": "Lt.Surge",
+    "gen": 1,
+    "gym": 3,
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/ltsurge.png",
+    "pokemon": ["Voltorb", "Pikachu", "Raichu"]
+  },
+  {
+    "name": "Erika",
+    "gen": 1,
+    "gym": 4,
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/erika.png",
+    "pokemon": ["Victreebel", "Tangela", "Vileplume"]
+  },
+  {
+    "name": "Koga",
+    "gen": 1,
+    "gym": 5,
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/koga.png",
+    "pokemon": ["Koffing", "Koffing", "Muk", "Weezing"]
+  },
+  {
+    "name": "Sabrina",
+    "gen": 1,
+    "gym": 6,
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/sabrina.png",
+    "pokemon": ["Kadabra", "Mr. Mime", "Venomoth", "Alakazam"]
+  },
+  {
+    "name": "Blaine",
+    "gen": 1,
+    "gym": 7,
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/blaine.png",
+    "pokemon": ["Growlithe", "Ponyta", "Rapidash", "Arcanine"]
+  },
+  {
+    "name": "Giovanni",
+    "gen": 1,
+    "gym": 8,
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/giovanni.png",
+    "pokemon": ["Rhyhorn", "Dugtrio", "Nidoqueen", "Nidoking", "Rhydon"]
+  },
+  {
+    "name": "Falkner",
+    "gen": 2,
+    "gym": 1,
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/falkner.png",
+    "pokemon": ["Pidgey", "Pidgeotto"]
+  },
+  {
+    "name": "Bugsy",
+    "gen": 2,
+    "gym": 2,
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/bugsy.png",
+    "pokemon": ["Metapod", "Kakuna", "Scyther"]
+  },
+  {
+    "name": "Whitney",
+    "gen": 2,
+    "gym": 3,
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/whitney.png",
+    "pokemon": ["Clefairy", "Miltank"]
+  },
+  {
+    "name": "Morty",
+    "gen": 2,
+    "gym": 4,
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/morty.png",
+    "pokemon": ["Gastly", "Haunter", "Haunter", "Gengar"]
+  },
+  {
+    "name": "Chuck",
+    "gen": 2,
+    "gym": 5,
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/chuck.png",
+    "pokemon": ["Primeape", "Poliwrath"]
+  },
+  {
+    "name": "Jasmine",
+    "gen": 2,
+    "gym": 6,
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/jasmine.png",
+    "pokemon": ["Magnemite", "Magnemite", "Steelix"]
+  },
+  {
+    "name": "Pryce",
+    "gen": 2,
+    "gym": 7,
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/pryce.png",
+    "pokemon": ["Seel", "Dewgong", "Piloswine"]
+  },
+  {
+    "name": "Clair",
+    "gen": 2,
+    "gym": 8,
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clair.png",
+    "pokemon": ["Dragonair", "Dragonair", "Dragonair", "Kingdra"]
+  },
+  {
+    "name": "Roxanne",
+    "gen": 3,
+    "gym": 1,
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/roxanne.png",
+    "pokemon": ["Geodude", "Nosepass"]
+  },
+  {
+    "name": "Brawly",
+    "gen": 3,
+    "gym": 2,
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brawly.png",
+    "pokemon": ["Machop", "Makuhita"]
+  },
+  {
+    "name": "Wattson",
+    "gen": 3,
+    "gym": 3,
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Dynamo",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wattson.png",
+    "pokemon": ["Magnemite", "Voltorb", "Magneton"]
+  },
+  {
+    "name": "Flannery",
+    "gen": 3,
+    "gym": 4,
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/flannery.png",
+    "pokemon": ["Slugma", "Slugma", "Torkoal"]
+  },
+  {
+    "name": "Norman",
+    "gen": 3,
+    "gym": 5,
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/norman.png",
+    "pokemon": ["Slaking", "Vigoroth", "Slaking"]
+  },
+  {
+    "name": "Winona",
+    "gen": 3,
+    "gym": 6,
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/winona.png",
+    "pokemon": ["Swellow", "Pelipper", "Skarmory", "Altaria"]
+  },
+  {
+    "name": "Tate&Liza",
+    "gen": 3,
+    "gym": 7,
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/tateliza.png",
+    "pokemon": ["Lunatone", "Solrock"]
+  },
+  {
+    "name": "Wallace",
+    "gen": 3,
+    "gym": 8,
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wallace.png",
+    "pokemon": ["Luvdisc", "Whiscash", "Sealeo", "Seaking", "Milotic"]
+  },
+  {
+    "name": "Roark",
+    "gen": 4,
+    "gym": 1,
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/roark.png",
+    "pokemon": ["Geodude", "Onix", "Cranidos"]
+  },
+  {
+    "name": "Gardenia",
+    "gen": 4,
+    "gym": 2,
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/gardenia.png",
+    "pokemon": ["Cherubi", "Turtwig", "Roserade"]
+  },
+  {
+    "name": "Maylene",
+    "gen": 4,
+    "gym": 3,
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/maylene.png",
+    "pokemon": ["Meditite", "Machoke", "Lucario"]
+  },
+  {
+    "name": "CrasherWake",
+    "gen": 4,
+    "gym": 4,
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/crasherwake.png",
+    "pokemon": ["Gyarados", "Quagsire", "Floatzel"]
+  },
+  {
+    "name": "Fantina",
+    "gen": 4,
+    "gym": 5,
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/fantina.png",
+    "pokemon": ["Drifblim", "Gengar", "Mismagius"]
+  },
+  {
+    "name": "Byron",
+    "gen": 4,
+    "gym": 6,
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/byron.png",
+    "pokemon": ["Bronzor", "Steelix", "Bastiodon"]
+  },
+  {
+    "name": "Candice",
+    "gen": 4,
+    "gym": 7,
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/candice.png",
+    "pokemon": ["Snover", "Sneasel", "Medicham", "Abomasnow"]
+  },
+  {
+    "name": "Volkner",
+    "gen": 4,
+    "gym": 8,
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/volkner.png",
+    "pokemon": ["Raichu", "Ambipom", "Octillery", "Luxray"]
+  },
+  {
+    "name": "Cilan",
+    "gen": 5,
+    "gym": 1,
+    "city": "Striaton City",
+    "type": "Grass",
+    "badge": "Trio",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/cilan.png",
+    "pokemon": ["Lillipup", "Pansage"]
+  },
+  {
+    "name": "Chili",
+    "gen": 5,
+    "gym": 1,
+    "city": "Striaton City",
+    "type": "Fire",
+    "badge": "Trio",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/chili.png",
+    "pokemon": ["Lillipup", "Pansear"]
+  },
+  {
+    "name": "Cress",
+    "gen": 5,
+    "gym": 1,
+    "city": "Striaton City",
+    "type": "Water",
+    "badge": "Trio",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/cress.png",
+    "pokemon": ["Lillipup", "Panpour"]
+  },
+  {
+    "name": "Lenora",
+    "gen": 5,
+    "gym": 2,
+    "city": "Nacrene City",
+    "type": "Normal",
+    "badge": "Basic",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/lenora.png",
+    "pokemon": ["Herdier", "Watchog"]
+  },
+  {
+    "name": "Burgh",
+    "gen": 5,
+    "gym": 3,
+    "city": "Castelia City",
+    "type": "Bug",
+    "badge": "Beetle",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/burgh.png",
+    "pokemon": ["Whirlipede", "Dwebble", "Leavanny"]
+  },
+  {
+    "name": "Elesa",
+    "gen": 5,
+    "gym": 4,
+    "city": "Nimbasa City",
+    "type": "Electric",
+    "badge": "Bolt",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/elesa.png",
+    "pokemon": ["Emolga", "Emolga", "Zebstrika"]
+  },
+  {
+    "name": "Clay",
+    "gen": 5,
+    "gym": 5,
+    "city": "Driftveil City",
+    "type": "Ground",
+    "badge": "Quake",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clay.png",
+    "pokemon": ["Krokorok", "Palpitoad", "Excadrill"]
+  },
+  {
+    "name": "Skyla",
+    "gen": 5,
+    "gym": 6,
+    "city": "Mistralton City",
+    "type": "Flying",
+    "badge": "Jet",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/skyla.png",
+    "pokemon": ["Swoobat", "Unfezant", "Swanna"]
+  },
+  {
+    "name": "Brycen",
+    "gen": 5,
+    "gym": 7,
+    "city": "Icirrus City",
+    "type": "Ice",
+    "badge": "Icicle",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brycen.png",
+    "pokemon": ["Vanillish", "Cryogonal", "Beartic"]
+  },
+  {
+    "name": "Drayden",
+    "gen": 5,
+    "gym": 8,
+    "city": "Opelucid City",
+    "type": "Dragon",
+    "badge": "Legend",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/drayden.png",
+    "pokemon": ["Fraxure", "Druddigon", "Haxorus"]
+  },
+  {
+    "name": "Iris",
+    "gen": 5,
+    "gym": 8,
+    "city": "Opelucid City",
+    "type": "Dragon",
+    "badge": "Legend",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/iris.png",
+    "pokemon": ["Fraxure", "Druddigon", "Haxorus"]
+  },
+  {
+    "name": "Viola",
+    "gen": 6,
+    "gym": 1,
+    "city": "Santalune City",
+    "type": "Bug",
+    "badge": "Bug",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/viola.png",
+    "pokemon": ["Surskit", "Vivillon"]
+  },
+  {
+    "name": "Grant",
+    "gen": 6,
+    "gym": 2,
+    "city": "Cyllage City",
+    "type": "Rock",
+    "badge": "Cliff",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/grant.png",
+    "pokemon": ["Amaura", "Tyrunt"]
+  },
+  {
+    "name": "Korrina",
+    "gen": 6,
+    "gym": 3,
+    "city": "Shalour City",
+    "type": "Fighting",
+    "badge": "Rumble",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/korrina.png",
+    "pokemon": ["Mienfoo", "Machoke", "Hawlucha"]
+  },
+  {
+    "name": "Ramos",
+    "gen": 6,
+    "gym": 4,
+    "city": "Coumarine City",
+    "type": "Grass",
+    "badge": "Plant",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/ramos.png",
+    "pokemon": ["Jumpluff", "Weepinbell", "Gogoat"]
+  },
+  {
+    "name": "Clemont",
+    "gen": 6,
+    "gym": 5,
+    "city": "Lumiose City",
+    "type": "Electric",
+    "badge": "Voltage",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clemont.png",
+    "pokemon": ["Emolga", "Magneton", "Heliolisk"]
+  },
+  {
+    "name": "Valerie",
+    "gen": 6,
+    "gym": 6,
+    "city": "Laverre City",
+    "type": "Fairy",
+    "badge": "Fairy",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/valerie.png",
+    "pokemon": ["Mr. Mime", "Mawile", "Sylveon"]
+  },
+  {
+    "name": "Olympia",
+    "gen": 6,
+    "gym": 7,
+    "city": "Anistar City",
+    "type": "Psychic",
+    "badge": "Psychic",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/olympia.png",
+    "pokemon": ["Sigilyph", "Slowking", "Meowstic"]
+  },
+  {
+    "name": "Wulfric",
+    "gen": 6,
+    "gym": 8,
+    "city": "Snowbelle City",
+    "type": "Ice",
+    "badge": "Iceberg",
+    "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wulfric.png",
+    "pokemon": ["Abomasnow", "Avalugg", "Cryogonal"]
+  }
+]
