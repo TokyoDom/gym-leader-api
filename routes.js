@@ -32,15 +32,50 @@ router.route("/leaders")
   })
   .post(async (req, res) => {
     try {
-      await knex("gym-leaders").insert(req.body);
+      req.body.name = req.body.name.charAt(0).toUpperCase() + req.body.name.slice(1);
+      if (req.body.pokemon) req.body.pokemon = req.body.pokemon.join();
+      await knex("gym_leaders").insert(req.body);
     } catch (err) {
       res.sendStatus(400);
       return;
     }
-    res.status(201).send("Success");
+    const newRecord = await knex("gym_leaders").where({ name: req.body.name });
+    res.status(201).json(newRecord);
+  });
+
+router.route("/leaders/:name")
+  .get(async (req, res) => {
+    const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
+    let data = await knex("gym_leaders").where({ name });
+    data = updatePokeArr(data);
+  
+    res.json(data);
   })
   .patch(async (req, res) => {
+    const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
+    try {
+      if (req.body.name) throw err;
+      if (req.body.pokemon) req.body.pokemon = req.body.pokemon.join();
+      await knex("gym_leaders").where({ name }).update(req.body);
+    } catch (err) {
+      res.sendStatus(400);
+      return;
+    }
 
+    const updatedRecord = await knex("gym_leaders").where({ name });
+
+    res.status(200).json(updatedRecord);
+  })
+  .delete(async (req, res) => {
+    const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
+    try {
+      await knex("gym_leaders").where({ name }).del();
+    } catch (err) {
+      res.sendStatus(400);
+      return;
+    }
+
+    res.status(204).send("Delete successful");
   });
 
 module.exports = router;
