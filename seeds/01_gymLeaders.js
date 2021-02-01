@@ -4,6 +4,9 @@ exports.seed = async function(knex) {
   return knex('gym_leaders').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('gym_leaders').insert(data);
+      return knex('gym_leaders').insert(data.map(leader => {
+        leader.pokemon = leader.pokemon.join()
+        return leader;
+      }));
     });
 };
