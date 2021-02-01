@@ -4,7 +4,8 @@
   "description": "This was created during my time as a student at Code Chrysalis",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r dotenv/config server.js",
+    "dev": "nodemon -r dotenv/config server.js"
   },
   "keywords": [],
   "author": "TokyoDom",
