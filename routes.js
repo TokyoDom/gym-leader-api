@@ -13,8 +13,7 @@ function updatePokeArr(data) {
 
 router.route("/leaders")
   .get(async (req, res) => {
-    let data = await knex("gym_leaders");
-    data = updatePokeArr(data);
+    const data = await knex("gym_leaders");
   
     let limit = req.query.limit;
     if (typeof limit !== "undefined") {
@@ -28,7 +27,7 @@ router.route("/leaders")
       }
     }
     
-    res.json(data);
+    res.json(updatePokeArr(data));
   })
   .post(async (req, res) => {
     try {
@@ -39,17 +38,17 @@ router.route("/leaders")
       res.sendStatus(400);
       return;
     }
+
     const newRecord = await knex("gym_leaders").where({ name: req.body.name });
-    res.status(201).json(newRecord);
+    res.status(201).json(updatePokeArr(newRecord));
   });
 
 router.route("/leaders/:name")
   .get(async (req, res) => {
     const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
-    let data = await knex("gym_leaders").where({ name });
-    data = updatePokeArr(data);
+    const data = await knex("gym_leaders").where({ name });
   
-    res.json(data);
+    res.json(updatePokeArr(data));
   })
   .patch(async (req, res) => {
     const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
@@ -64,7 +63,7 @@ router.route("/leaders/:name")
 
     const updatedRecord = await knex("gym_leaders").where({ name });
 
-    res.status(200).json(updatedRecord);
+    res.status(200).json(updatePokeArr(updatedRecord));
   })
   .delete(async (req, res) => {
     const name = req.params.name.charAt(0).toUpperCase() + req.params.name.slice(1);
@@ -77,5 +76,10 @@ router.route("/leaders/:name")
 
     res.status(204).send("Delete successful");
   });
+
+router.get("/gens/:gen/leaders", async (req, res) => {
+  const data = await knex("gym_leaders").where({ gen: req.params.gen });
+  res.json(updatePokeArr(data));
+});
 
 module.exports = router;
