@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.json());
 app.use("/api", routes);
+app.use(express.static('client'));
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "index.html"));
