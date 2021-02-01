@@ -82,4 +82,18 @@ router.get("/gens/:gen/leaders", async (req, res) => {
   res.json(updatePokeArr(data));
 });
 
+router.get("/types/:type/leaders", async (req, res) => {
+  const type = req.params.type.charAt(0).toUpperCase() + req.params.type.slice(1);
+
+  const data = await knex("gym_leaders").where({ type });
+  res.json(updatePokeArr(data));
+});
+
+router.get("/pokemon/:poke/leaders", async (req, res) => {
+  const poke = req.params.poke.charAt(0).toUpperCase() + req.params.poke.slice(1);
+
+  const data = await knex("gym_leaders").where("pokemon", "like", `%${poke}%`);
+  res.json(updatePokeArr(data));
+});
+
 module.exports = router;
