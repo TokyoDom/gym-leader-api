@@ -7,15 +7,18 @@ const knex = require('knex')(knexConfig);
 router.get("/leaders", async (req, res) => {
   let data = await knex.select().from("gym_leaders");
 
-  try {
-    const limit = parseInt(req.query.limit);
-    data = data.slice(0, limit);
-  } catch (err) {
-    console.error(err);
-    res.sendStatus(400);
-    return;
+  let limit = req.query.limit;
+  if (typeof limit !== "undefined") {
+    limit = parseInt(limit);
+
+    if(Number.isNaN(limit)) {
+      res.sendStatus(400);
+      return;
+    } else {
+      data = data.slice(0, limit);
+    }
   }
-   
+  
   res.json(data);
 });
 
