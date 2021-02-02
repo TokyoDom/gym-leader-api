@@ -1,3 +1,5 @@
+const root = document.getElementById("root");
+
 function GymLeader(leader) {
   //edge case
   if(leader.name === "Tate&Liza") {
@@ -10,8 +12,8 @@ function GymLeader(leader) {
     <div class="gym-leader-info">
       <img src=${leader.sprite} />
       <h1>${leader.name}</h1>
-      <p>${leader.city ? leader.city : "N/A"}</p>
-      <p>${leader.badge ? leader.badge : "N/A"} Badge</p>
+      <p>Location: ${leader.city ? leader.city : "N/A"}</p>
+      <p>Badge: ${leader.badge ? leader.badge : "N/A"}</p>
       <p>Type: ${leader.type ? leader.type : "N/A"}</p>
       <p>Gym: ${leader.gym ? leader.gym : "N/A"}</p>
       <p>Generation: ${leader.gen ? leader.gen : "N/A"}</p>
@@ -35,17 +37,42 @@ async function getData() {
   const URL = "/api/" + document.querySelector(".endpoint-input input").value;
   const res = await fetch(URL);
   const data = await res.json();
-  console.log(data);
-  return data;
-}
-
-async function renderData() {
-  const data = await getData();
-  const root = document.getElementById("root");
   if (data.length === 0) {
     root.innerHTML = "<p>No results found.</p>"
   } else {
     root.innerHTML = `${data.map(leader => GymLeader(leader)).join("")}`
+  }
+}
+
+async function postData() {
+  const fakeLeader = {
+    name: "Dom",
+    gen: 1,
+    gym: 9,
+    city: "Tokyo",
+    type: "Water",
+    badge: "CC17",
+    sprite: "https://play.pokemonshowdown.com/sprites/trainers/backpacker.png",
+    pokemon: ["Swampert", "Slowbro", "Gyarados"]
+  }
+  const URL = "/api/leaders";
+
+  const res = await fetch(URL, {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(fakeLeader)
+  });
+
+  if (res.status === 400) {
+    root.innerHTML = '<p>400 Bad Request</p>'
+  } else {
+    root.innerHTML = 
+    `<div>
+      <p>Resource Created</p>
+      ${JSON.stringify(fakeLeader)}
+    <div>`;
   }
 }
 
@@ -54,6 +81,7 @@ document.querySelector(".endpoint-input input").addEventListener("keyup", (e) =>
   if (e.key === "Enter") renderData();
 });
 
-document.querySelector(".btn").addEventListener("click", renderData);
+document.querySelector(".get-button").addEventListener("click", getData);
+document.querySelector(".post-button").addEventListener("click", postData);
 
-renderData();
+getData();
