@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: 4vh auto;
+}
+
+.bi-github {
+  font-size: 32px;
+  color: black;
+}
+
+.endpoint-input {
+  display: flex;
+  justify-content: center;
+}
+
+.gym-leader-card {
+  display: flex;
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px auto;
+}
+
+.gym-leader-info {
+  width: 200px;
+}
+
+.gym-leader-info h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.gym-leader-team {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
