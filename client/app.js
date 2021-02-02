@@ -99,6 +99,21 @@ async function patchData() {
   }
 }
 
+async function deleteData() {
+  const URL = "/api/leaders/dom";
+
+  const res = await fetch(URL, { method: 'DELETE'});
+
+  if (res.status === 400) {
+    root.innerHTML = '<p>400 Bad Request</p>'
+  } else {
+    root.innerHTML = 
+    `<div>
+      <p>Resource Deleted</p>
+    <div>`;
+  }
+}
+
 
 document.querySelector(".endpoint-input input").addEventListener("keyup", (e) => {
   if (e.key === "Enter") renderData();
@@ -107,5 +122,6 @@ document.querySelector(".endpoint-input input").addEventListener("keyup", (e) =>
 document.querySelector(".get-button").addEventListener("click", getData);
 document.querySelector(".post-button").addEventListener("click", postData);
 document.querySelector(".patch-button").addEventListener("click", patchData);
+document.querySelector(".delete-button").addEventListener("click", deleteData);
 
 getData();
