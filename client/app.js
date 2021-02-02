@@ -76,6 +76,29 @@ async function postData() {
   }
 }
 
+async function patchData() {
+  const newPokemon = { pokemon: ["Starmie", "Feraligatr", "Ludicolo"] }
+  const URL = "/api/leaders/dom";
+
+  const res = await fetch(URL, {
+    method: 'PATCH',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newPokemon)
+  });
+
+  if (res.status === 400) {
+    root.innerHTML = '<p>400 Bad Request</p>'
+  } else {
+    root.innerHTML = 
+    `<div>
+      <p>Resource Updated</p>
+      ${JSON.stringify(newPokemon)}
+    <div>`;
+  }
+}
+
 
 document.querySelector(".endpoint-input input").addEventListener("keyup", (e) => {
   if (e.key === "Enter") renderData();
@@ -83,5 +106,6 @@ document.querySelector(".endpoint-input input").addEventListener("keyup", (e) =>
 
 document.querySelector(".get-button").addEventListener("click", getData);
 document.querySelector(".post-button").addEventListener("click", postData);
+document.querySelector(".patch-button").addEventListener("click", patchData);
 
 getData();
