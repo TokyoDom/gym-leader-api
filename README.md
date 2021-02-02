@@ -65,7 +65,7 @@ npm run dev
   ```
 
 - GET /api/pokemon/onix/leaders - gets all Gym Leaders that have Onix.
-- GET /api/type/rock/leaders - gets all rock type Gym Leaders.
+- GET /api/types/grass/leaders - gets all Grass type Gym Leaders.
 - GET /api/leaders - will return all leaders, can accept a ?limit query to return a set amount of leaders
 - POST /api/leaders - creates new record if valid values are passed and returns new record, returns 400 status otherwise
 - PATCH /api/leaders/:name - updates record if valid values are passed and returns updated record, returns 400 status otherwise
