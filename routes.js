@@ -13,7 +13,7 @@ function updatePokeArr(data) {
 
 router.route("/leaders")
   .get(async (req, res) => {
-    const data = await knex("gym_leaders");
+    let data = await knex("gym_leaders");
   
     let limit = req.query.limit;
     if (typeof limit !== "undefined") {
