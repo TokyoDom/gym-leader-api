@@ -70,3 +70,6 @@ npm run dev
 - POST /api/leaders - creates new record if valid values are passed and returns new record, returns 400 status otherwise
 - PATCH /api/leaders/:name - updates record if valid values are passed and returns updated record, returns 400 status otherwise
 - DELETE /api/leaders/:name - deletes record if it exists, returns 204
+
+### Credits
+- Thanks to pokemon showdown for the sprites
